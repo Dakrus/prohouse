@@ -124,7 +124,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 1100px; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -1583,7 +1583,7 @@ button, .button {
   border-width: 0;
   cursor: pointer;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   line-height: normal;
   margin: 0 0 1.25rem;
   position: relative;
@@ -1593,18 +1593,18 @@ button, .button {
   border-radius: 0;
   display: inline-block;
   padding-top: 1rem;
-  padding-right: 2rem;
+  padding-right: 1.2rem;
   padding-bottom: 1.0625rem;
-  padding-left: 2rem;
+  padding-left: 1.2rem;
   font-size: 1rem;
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: #fc5900;
   color: #FFFFFF;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #007095; }
+    background-color: white;
+    color: #fc5900}
   button:hover, button:focus, .button:hover, .button:focus {
-    color: #FFFFFF; }
+    color: #fc5900; }
   button.secondary, .button.secondary {
     background-color: #e7e7e7;
     border-color: #b9b9b9;
@@ -4757,7 +4757,6 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    padding: 0 7%;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -4787,7 +4786,6 @@ meta.foundation-mq-topbar {
 
   .top-bar-section {
     margin: auto;
-    max-width: 90%;
     transition: none 0 0;
     left: 0 !important; }
     .top-bar-section ul {
