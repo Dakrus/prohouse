@@ -3,7 +3,8 @@
   padding: 0; }
 
 body {
-  background: url("../img/bg_pic.jpg") no-repeat; }
+  background: url("../img/bg_pic.jpg") no-repeat;
+  background-color: #302017; }
 
 .header-in {
   background-color: rgba(43, 28, 19, 0.6);
@@ -48,9 +49,6 @@ body {
 .content {
   margin-top: 168px; }
 
-.left-section {
-  height: 500px; }
-
 .fixed .logo {
   z-index: 100;
   width: 13%; }
@@ -68,19 +66,22 @@ body {
     font-weight: bold; }
   .rounds .info:hover {
     color: white; }
-  .rounds img {
-    width: 90%;
-    margin: 5px 0; }
 
 .rounds-in {
-  width: 90%;
+  width: 77%;
   margin: auto; }
+  .rounds-in img {
+    width: 100%;
+    margin: 5px 0; }
 
 .brown {
   background-color: rgba(43, 28, 19, 0.85); }
 
 .grey {
   background-color: rgba(82, 82, 80, 0.8); }
+
+.whity {
+  background-color: rgba(255, 255, 255, 0.8); }
 
 .dots {
   background: url("../img/border1.png") repeat-x;
@@ -117,5 +118,8 @@ body {
 
 .fa-youtube {
   padding: 9px 12px; }
+
+.w-fix {
+  margin: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %link{href:"css/foundation.css", rel:"stylesheet"}/
     %link{href:"css/style.css", rel: "stylesheet"}/
+    %link{href:"css/jquery.bxslider.css", rel: "stylesheet"}
     %link{href:"css/animate.css", rel: "stylesheet"}/
     %link{href:"//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", rel:"stylesheet"}
     %title Genius
@@ -54,7 +55,7 @@
                       %a{href:"#"} CONTACTS
       .content
         .row
-          .large-3.columns.animated.fadeInLeft.left-section
+          .large-3.small-12.columns.animated.fadeInLeft.left-section
             .row
               .large-12.columns.rounds.brown
                 .rounds-in
@@ -74,7 +75,7 @@
                   %hr.dots
                   %a.button.radius{href:"#"} SEE ALL
               .large-12.columns.rounds.grey
-                .rounds-in
+                .rounds-ins
                   %h3.white FOLLOW US
                   %hr.dots
                   .icons
@@ -84,12 +85,25 @@
                       %i.fa.fa-facebook.ico
                     %a{href:"#"}
                       %i.fa.fa-youtube.ico
-          .large-3.columns.animated.fadeInDown.center-section
-            .row
+          .large-6.small-12.columns.animated.fadeInDown.center-section
+            .row.w-fix
               .large-12.columns.rounds
-          .large-3.columns.animated.fadeInRight.right-section
+                %ul.bxslider
+                  %li
+                    %img{src:"img/picslide1.jpg"}
+                  %li
+                    %img{src:"img/picslide2.jpg"}
+                  %li
+                    %img{src:"img/picslide3.jpg"}
+                  %li
+                    %img{src:"img/picslide4.jpg"}
+              .large-12.columns.rounds.whity
+                %h3.dark LUNCH
+                %h3.orange SPECIAL
+          .large-3.small-12.columns.animated.fadeInRight.right-section
     %script{src:"js/vendor/jquery.js"}
     %script{src:"js/foundation.min.js"}
+    %script{src:"js/jquery.bxslider.js"}
     :javascript
       $(document).foundation();
     :javascript
@@ -102,6 +116,10 @@
             nav.removeClass("fadeInDown");
           }
         });
+      });
+    :javascript
+      $(document).ready(function(){
+        $('.bxslider').bxSlider();
       });
 
 
