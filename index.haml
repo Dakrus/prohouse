@@ -60,24 +60,29 @@
               .large-12.columns.rounds.brown
                 .rounds-in
                   %h3.white OUR EVENTS
-                  %hr.dots
+                %hr.dots-white.dots
+                .rounds-in
                   %img{src:"img/pic1.jpg"}
                   %a.info{href:"#"} LOREM IPSUM DOLOR SIT AMET CONS
                   %p.white Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  %hr.dots
+                %hr.dots-white.dots
+                .rounds-in
                   %img{src:"img/pic2.jpg"}
                   %a.info{href:"#"} EA COMMODO CONSEQUAT. DUIS AUTE IRURE
                   %p.white Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  %hr.dots
+                %hr.dots-white.dots
+                .rounds-in
                   %img{src:"img/pic3.jpg"}
                   %a.info{href:"#"} DOLOR IN REPREHENDERIT IN VOLUPTATE VELIT ES
                   %p.white Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  %hr.dots
+                %hr.dots-white.dots
+                .rounds-in
                   %a.button.radius{href:"#"} SEE ALL
               .large-12.columns.rounds.grey
-                .rounds-ins
+                .rounds-in
                   %h3.white FOLLOW US
-                  %hr.dots
+                %hr.dots-white.dots
+                .rounds-in
                   .icons
                     %a{href:"#"}
                       %i.fa.fa-twitter.ico
@@ -97,9 +102,75 @@
                     %img{src:"img/picslide3.jpg"}
                   %li
                     %img{src:"img/picslide4.jpg"}
-              .large-12.columns.rounds.whity
-                %h3.dark LUNCH
-                %h3.orange SPECIAL
+              .large-12.columns.rounds.whity.w-1
+                .rounds-in
+                  %h3.dark LUNCH
+                  %h3.orange SPECIAL
+                %hr.dots-dark.dots
+                .rounds-in
+                  .row
+                    .large-6.columns
+                      %img{src:"img/page1_pic4.jpg"}
+                      %a.info{href:"#"} LOREM IPSUM DOLOR SIT
+                      %p.white Lorem ipsum dolor sit amet conse ctetur adipisicing elit
+                      .price
+                        %p $25 <span>.89</span>
+                    .large-6.columns
+                      %img{src:"img/page1_pic5.jpg"}
+                      %a.info{href:"#"} LOREM IPSUM DOLOR SIT
+                      %p.white Lorem ipsum dolor sit amet conse ctetur adipisicing elit
+                      .price
+                        %p $15 <span>.89</span>
+                %hr.dots-dark.dots
+                .rounds-in
+                  .row
+                    .large-6.columns
+                      %img{src:"img/page1_pic6.jpg"}
+                      %a.info{href:"#"} LOREM IPSUM DOLOR SIT
+                      %p.white Lorem ipsum dolor sit amet conse ctetur adipisicing elit
+                      .price
+                        %p $8 <span>.89</span>
+                    .large-6.columns
+                      %img{src:"img/page1_pic7.jpg"}
+                      %a.info{href:"#"} LOREM IPSUM DOLOR SIT
+                      %p.white Lorem ipsum dolor sit amet conse ctetur adipisicing elit
+                      .price
+                        %p $32 <span>.89</span>
+                %hr.dots-dark.dots
+                  .rounds-in
+                    %a.button.radius{href:"#"} SEE ALL
+              .large-12.columns.rounds.whity.w-2
+                .rounds-in
+                  %h3.dark LATEST
+                  %h3.orange PHOTOS
+                %hr.dots-dark.dots
+                .rounds-in
+                  .row
+                    .large-6.columns.fig
+                      %a
+                        .figure.f-1{href:"#"}
+                          .figure-in
+                            %p.p-top 16 Dec, 2014
+                            %p.p-bot Lorem ipsum dolor sit amet conse ctetur adipisicing elit
+                    .large-6.columns.fig
+                      %a
+                        .figure.f-2{href:"#"}
+                          .figure-in
+                            %p.p-top 15 Dec, 2014
+                            %p.p-bot Lorem ipsum dolor sit amet conse ctetur adipisicing elit
+                    .large-6.columns.fig
+                      %a
+                        .figure.f-3{href:"#"}
+                          .figure-in
+                            %p.p-top 25 Dec, 2014
+                            %p.p-bot Lorem ipsum dolor sit amet conse ctetur adipisicing elit
+                    .large-6.columns.fig
+                      %a
+                        .figure.f-4{href:"#"}
+                          .figure-in
+                            %p.p-top 25 Dec, 2014
+                            %p.p-bot Lorem ipsum dolor sit amet conse ctetur adipisicing elit
+                  %a.button.radius{href:"#"} SEE ALL
           .large-3.small-12.columns.animated.fadeInRight.right-section
     %script{src:"js/vendor/jquery.js"}
     %script{src:"js/foundation.min.js"}
@@ -116,6 +187,15 @@
             nav.removeClass("fadeInDown");
           }
         });
+        var cbw = $('.w-1');
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 200) {
+            cbw.addClass("fadeInUp");
+            cbw.addClass("animated");
+            } else {
+            cbw.removeClass("fadeInUp");
+            }
+            });
       });
     :javascript
       $(document).ready(function(){

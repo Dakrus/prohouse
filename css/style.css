@@ -47,7 +47,7 @@ body {
   border-radius: 7px 7px 0 0; }
 
 .content {
-  margin-top: 168px; }
+  margin-top: 158px; }
 
 .fixed .logo {
   z-index: 100;
@@ -60,7 +60,8 @@ body {
   .rounds h3 {
     font-size: 50px;
     font-weight: bold;
-    line-height: 1; }
+    line-height: 0.8;
+    margin-bottom: 0; }
   .rounds .info {
     color: #fc5900;
     font-weight: bold; }
@@ -82,12 +83,23 @@ body {
 
 .whity {
   background-color: rgba(255, 255, 255, 0.8); }
+  .whity .info:hover {
+    color: #2c1d15; }
+  .whity p {
+    color: #2c1d15; }
+  .whity .white {
+    margin-bottom: -8px; }
 
 .dots {
-  background: url("../img/border1.png") repeat-x;
   width: 100%;
   height: 2px;
   border: none; }
+
+.dots-white {
+  background: url("../img/border1.png") repeat-x; }
+
+.dots-dark {
+  background: url("../img/border2.png") repeat-x; }
 
 .white {
   color: #ffffff;
@@ -95,7 +107,6 @@ body {
   margin: 8px 0; }
 
 .icons {
-  width: 91%;
   margin: auto; }
 
 .ico {
@@ -103,7 +114,7 @@ body {
   background-color: #fc5900;
   border-radius: 100%;
   font-size: 41px;
-  margin: 5px; }
+  margin: 3px; }
 
 .ico:hover {
   color: #fc5900;
@@ -121,5 +132,65 @@ body {
 
 .w-fix {
   margin: 0 !important; }
+
+.center-section {
+  padding-right: 15px; }
+  .center-section .rounds-in {
+    width: 90%; }
+
+.dark {
+  color: #2c1d15; }
+
+.orange {
+  color: #fc5900; }
+
+.right-section {
+  background-color: red;
+  height: 500px; }
+
+.price p {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: -0.75rem; }
+.price span {
+  font-size: 25px;
+  top: -14px;
+  position: relative;
+  left: -10px; }
+
+.fig {
+  margin-bottom: 30px; }
+
+.figure {
+  height: 168px; }
+
+.f-1 {
+  background: url("../img/page1_pic7.jpg") no-repeat; }
+
+.f-2 {
+  background: url("../img/page1_pic5.jpg") no-repeat; }
+
+.f-3 {
+  background: url("../img/page1_pic6.jpg") no-repeat; }
+
+.f-4 {
+  background: url("../img/page1_pic4.jpg") no-repeat; }
+
+.figure-in {
+  background-color: #fc5900;
+  height: 100%;
+  padding: 23px;
+  opacity: 0;
+  transform: scale(0.2); }
+  .figure-in .p-top {
+    font-weight: bold;
+    color: #ffffff; }
+  .figure-in .p-bot {
+    color: #ffffff; }
+
+.fig:hover .figure .figure-in {
+  opacity: 0.8;
+  transform: scale(1);
+  transition: 0.5s; }
 
 /*# sourceMappingURL=style.css.map */

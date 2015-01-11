@@ -1592,10 +1592,10 @@ button, .button {
   -webkit-appearance: none;
   border-radius: 0;
   display: inline-block;
-  padding-top: 1rem;
-  padding-right: 1.2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 1.2rem;
+  padding-top: 0.6rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.75rem;
   font-size: 1rem;
   background-color: #fc5900;
   color: #FFFFFF;
