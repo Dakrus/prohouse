@@ -13,7 +13,7 @@
       %header
         .header-in.animated
           .row.full-width
-            .large-2.medium-12.columns.logo
+            .large-2.medium-12.columns.logo.logo-full
               %a{href:"#"}
                 %img{src:"img/logo.png"}
             .large-10.medium-12.columns.width
@@ -78,7 +78,7 @@
                 %hr.dots-white.dots
                 .rounds-in
                   %a.button.radius{href:"#"} SEE ALL
-              .large-12.columns.rounds.grey
+              .large-12.columns.rounds.grey.l-2
                 .rounds-in
                   %h3.white FOLLOW US
                 %hr.dots-white.dots
@@ -172,6 +172,39 @@
                             %p.p-bot Lorem ipsum dolor sit amet conse ctetur adipisicing elit
                   %a.button.radius{href:"#"} SEE ALL
           .large-3.small-12.columns.animated.fadeInRight.right-section
+            .row
+              .large-12.columns.rounds.orangy
+                .rounds-in
+                  %h3.white OUR HOURS
+                %hr.dots-white.dots
+                .rounds-in
+                  .list
+                    %h4.white MONDAY - FRIDAY
+                    %p 7AM - 11AM (Breakfast)
+                    %p 11AM - 10PM (Lunch/Dinner)
+                  .list
+                    %h4.white SATURDAY / SUNDAY
+                    %p 8AM - 1PM (Brunch)
+                    %p 1PM - 9PM (Lunch/Dinner)
+              .large-12.columns.rounds.grey.l-2
+                .rounds-in
+                  %h3.white RESERVE A TABLE
+                %hr.dots-white.dots
+                .rounds-in
+                  .row.phone
+                    .small-2.columns
+                      %i.fa.fa-phone.ico
+                    .small-10.columns
+                      %p.orange (800) 2345-7890
+                      %p.orange (800) 2345-7891
+              .large-12.columns.rounds.brown.l-3
+                .rounds-in
+                  %h3.white OUR HISTORY
+                %hr.dots-white.dots
+                .rounds-in
+                  %p.orange LOREM IPSUM DOLOR SIT AMET CONS
+                  %p.white Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sin.
+                  %a.button.radius{href:"#"} READ MORE
     %script{src:"js/vendor/jquery.js"}
     %script{src:"js/foundation.min.js"}
     %script{src:"js/jquery.bxslider.js"}
@@ -187,6 +220,16 @@
             nav.removeClass("fadeInDown");
           }
         });
+        var top = $('.logo');
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 36) {
+            top.addClass("logo-min");
+            top.removeClass("logo-full");
+          } else {
+            top.removeClass("logo-min");
+            top.addClass("logo-full");
+          }
+        });
         var cbw = $('.w-1');
         $(window).scroll(function() {
           if ($(this).scrollTop() > 200) {
@@ -194,6 +237,37 @@
             cbw.addClass("animated");
             } else {
             cbw.removeClass("fadeInUp");
+            cbw.removeClass("animated");
+            }
+            });
+        var cba = $('.w-2');
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 1000) {
+            cba.addClass("fadeInUp");
+            cba.addClass("animated");
+            } else {
+            cba.removeClass("fadeInUp");
+            cba.removeClass("animated");
+            }
+            });
+        var left = $('.l-2');
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 200) {
+            left.addClass("fadeInRight");
+            left.addClass("animated");
+            } else {
+            left.removeClass("fadeInRight");
+            left.removeClass("animated");
+            }
+            });
+        var left1 = $('.l-3');
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 300) {
+            left1.addClass("fadeInRight");
+            left1.addClass("animated");
+            } else {
+            left1.removeClass("fadeInRight");
+            left1.removeClass("animated");
             }
             });
       });

@@ -17,9 +17,13 @@ body
   padding: 0
   float: right
 
-.header-in .logo
+.header-in.logo-min
+  width: 10%
+
+.header-in .logo-full
   width: 25%
   padding: 0
+.logo
   img
     position: absolute
     width: 100%
@@ -60,7 +64,7 @@ body
   margin-bottom: 30px
   padding: 8px 0
   h3
-    font-size: 50px
+    font-size: 44px
     font-weight: bold
     line-height: 0.8
     margin-bottom: 0
@@ -91,6 +95,16 @@ body
     color: #2c1d15
   .white
     margin-bottom: -8px
+.orangy
+  background-color: #d5510d
+  p
+    margin-bottom: 0
+    font-size: 14px
+  h4
+    font-size: 20px
+    font-weight: bold
+.list p:last-child
+  margin-bottom: 14px
 .dots
   width: 100%
   height: 2px
@@ -140,9 +154,6 @@ body
 .orange
   color: #fc5900
 
-.right-section
-  background-color: red
-  height: 500px
 .price
   p
     font-size: 45px
@@ -180,3 +191,21 @@ body
   opacity: 0.8
   transform: scale(1)
   transition: 0.5s
+
+.phone
+  .fa
+    background: none
+    color: #ffffff
+    margin-top: 14px
+  p
+    font-weight: bold
+    margin-bottom: 0
+    font-size: 21px
+    padding-left: 10px
+    &:last-child
+      margin-bottom: 10px
+.right-section
+  .orange
+    font-weight: bold
+  .button
+    margin-top: 20px

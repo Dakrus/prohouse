@@ -14,7 +14,7 @@
       <header>
         <div class='header-in animated'>
           <div class='row full-width'>
-            <div class='large-2 medium-12 columns logo'>
+            <div class='large-2 medium-12 columns logo logo-full'>
               <a href='#'>
                 <img src='img/logo.png'>
               </a>
@@ -112,7 +112,7 @@
                   <a class='button radius' href='#'>SEE ALL</a>
                 </div>
               </div>
-              <div class='large-12 columns rounds grey'>
+              <div class='large-12 columns rounds grey l-2'>
                 <div class='rounds-in'>
                   <h3 class='white'>FOLLOW US</h3>
                 </div>
@@ -258,7 +258,56 @@
               </div>
             </div>
           </div>
-          <div class='large-3 small-12 columns animated fadeInRight right-section'></div>
+          <div class='large-3 small-12 columns animated fadeInRight right-section'>
+            <div class='row'>
+              <div class='large-12 columns rounds orangy'>
+                <div class='rounds-in'>
+                  <h3 class='white'>OUR HOURS</h3>
+                </div>
+                <hr class='dots-white dots'>
+                <div class='rounds-in'>
+                  <div class='list'>
+                    <h4 class='white'>MONDAY - FRIDAY</h4>
+                    <p>7AM - 11AM (Breakfast)</p>
+                    <p>11AM - 10PM (Lunch/Dinner)</p>
+                  </div>
+                  <div class='list'>
+                    <h4 class='white'>SATURDAY / SUNDAY</h4>
+                    <p>8AM - 1PM (Brunch)</p>
+                    <p>1PM - 9PM (Lunch/Dinner)</p>
+                  </div>
+                </div>
+              </div>
+              <div class='large-12 columns rounds grey l-2'>
+                <div class='rounds-in'>
+                  <h3 class='white'>RESERVE A TABLE</h3>
+                </div>
+                <hr class='dots-white dots'>
+                <div class='rounds-in'>
+                  <div class='row phone'>
+                    <div class='small-2 columns'>
+                      <i class='fa fa-phone ico'></i>
+                    </div>
+                    <div class='small-10 columns'>
+                      <p class='orange'>(800) 2345-7890</p>
+                      <p class='orange'>(800) 2345-7891</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='large-12 columns rounds brown l-3'>
+                <div class='rounds-in'>
+                  <h3 class='white'>OUR HISTORY</h3>
+                </div>
+                <hr class='dots-white dots'>
+                <div class='rounds-in'>
+                  <p class='orange'>LOREM IPSUM DOLOR SIT AMET CONS</p>
+                  <p class='white'>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sin.</p>
+                  <a class='button radius' href='#'>READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -278,6 +327,16 @@
             nav.removeClass("fadeInDown");
           }
         });
+        var top = $('.logo');
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 36) {
+            top.addClass("logo-min");
+            top.removeClass("logo-full");
+          } else {
+            top.removeClass("logo-min");
+            top.addClass("logo-full");
+          }
+        });
         var cbw = $('.w-1');
         $(window).scroll(function() {
           if ($(this).scrollTop() > 200) {
@@ -285,6 +344,37 @@
             cbw.addClass("animated");
             } else {
             cbw.removeClass("fadeInUp");
+            cbw.removeClass("animated");
+            }
+            });
+        var cba = $('.w-2');
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 1000) {
+            cba.addClass("fadeInUp");
+            cba.addClass("animated");
+            } else {
+            cba.removeClass("fadeInUp");
+            cba.removeClass("animated");
+            }
+            });
+        var left = $('.l-2');
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 200) {
+            left.addClass("fadeInRight");
+            left.addClass("animated");
+            } else {
+            left.removeClass("fadeInRight");
+            left.removeClass("animated");
+            }
+            });
+        var left1 = $('.l-3');
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 300) {
+            left1.addClass("fadeInRight");
+            left1.addClass("animated");
+            } else {
+            left1.removeClass("fadeInRight");
+            left1.removeClass("animated");
             }
             });
       });

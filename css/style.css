@@ -17,12 +17,16 @@ body {
   padding: 0;
   float: right; }
 
-.header-in .logo {
+.header-in.logo-min {
+  width: 10%; }
+
+.header-in .logo-full {
   width: 25%;
   padding: 0; }
-  .header-in .logo img {
-    position: absolute;
-    width: 100%; }
+
+.logo img {
+  position: absolute;
+  width: 100%; }
 
 .top-bar-section a:hover {
   color: #fc5900 !important;
@@ -58,7 +62,7 @@ body {
   margin-bottom: 30px;
   padding: 8px 0; }
   .rounds h3 {
-    font-size: 50px;
+    font-size: 44px;
     font-weight: bold;
     line-height: 0.8;
     margin-bottom: 0; }
@@ -89,6 +93,18 @@ body {
     color: #2c1d15; }
   .whity .white {
     margin-bottom: -8px; }
+
+.orangy {
+  background-color: #d5510d; }
+  .orangy p {
+    margin-bottom: 0;
+    font-size: 14px; }
+  .orangy h4 {
+    font-size: 20px;
+    font-weight: bold; }
+
+.list p:last-child {
+  margin-bottom: 14px; }
 
 .dots {
   width: 100%;
@@ -144,10 +160,6 @@ body {
 .orange {
   color: #fc5900; }
 
-.right-section {
-  background-color: red;
-  height: 500px; }
-
 .price p {
   font-size: 45px;
   font-weight: bold;
@@ -192,5 +204,22 @@ body {
   opacity: 0.8;
   transform: scale(1);
   transition: 0.5s; }
+
+.phone .fa {
+  background: none;
+  color: #ffffff;
+  margin-top: 14px; }
+.phone p {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 21px;
+  padding-left: 10px; }
+  .phone p:last-child {
+    margin-bottom: 10px; }
+
+.right-section .orange {
+  font-weight: bold; }
+.right-section .button {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
